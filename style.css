@@ -1,0 +1,322 @@
+:root {
+    color-scheme: light;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #23342d;
+    background: #f5f3ed;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    background-color: #e8eee8;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.home-page {
+    background-image: linear-gradient(#17271eb8, #17271e8c), url("images/bg.jpg");
+}
+
+body.tourist-page {
+    background-image: linear-gradient(#17271eb8, #17271e8c), url("images/isha.jpg");
+}
+
+body.historical-page {
+    background-image: linear-gradient(#17271eb8, #17271e8c), url("images/k1.jpg");
+}
+
+body.waterfalls-page {
+    background-image: linear-gradient(#17271eb8, #17271e8c), url("images/waterfall.jpg");
+}
+
+body.foods-page {
+    background-image: linear-gradient(#17271eb8, #17271e8c), url("images/foods/bisibalebath.jpg");
+}
+
+body.travel-page {
+    background-image: linear-gradient(#17271eb8, #17271e8c), url("images/map.jpg");
+}
+
+.site-header,
+main {
+    width: min(100%, 1080px);
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 16px 20px;
+    border: 1px solid #ffffff70;
+    border-radius: 16px;
+    background: #f8f7f1f2;
+    box-shadow: 0 8px 24px #17271e30;
+}
+
+.brand {
+    flex-shrink: 0;
+    color: #28533e;
+    font-size: 1.15rem;
+    font-weight: 750;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.site-nav a {
+    padding: 9px 12px;
+    border-radius: 999px;
+    color: #46564d;
+    font-size: 0.92rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+    background: #28533e;
+    color: #fff;
+}
+
+.page-title {
+    margin: 34px 0 24px;
+    color: #fff;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.1;
+    text-align: center;
+    text-shadow: 0 2px 12px #17271e90;
+}
+
+.home-intro {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.home-intro .page-title {
+    margin-bottom: 10px;
+}
+
+.home-intro > p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.plaque-grid,
+.destination-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 20px;
+    margin: 28px auto;
+}
+
+.plaque-card,
+.destination-card,
+.food-card,
+.historic-card {
+    border: 1px solid #ffffffa6;
+    border-radius: 16px;
+    background: #f8f7f1f2;
+    box-shadow: 0 8px 24px #17271e30;
+}
+
+.plaque-card,
+.destination-card {
+    padding: 22px;
+}
+
+.plaque-card h2,
+.destination-card h2,
+.food-card h2,
+.historic-card h2 {
+    margin: 0 0 12px;
+    color: #28533e;
+}
+
+.plaque-card p,
+.plaque-card li,
+.destination-card p,
+.destination-card li,
+.food-card p,
+.historic-card p {
+    line-height: 1.65;
+}
+
+.plaque-card p:last-child,
+.food-card p,
+.historic-card p {
+    margin-bottom: 0;
+}
+
+.plaque-card ul {
+    margin-bottom: 0;
+    padding-left: 22px;
+}
+
+.home-info {
+    max-width: 940px;
+}
+
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+    gap: 16px;
+    margin: 28px auto;
+}
+
+.home-card {
+    display: flex;
+    min-height: 150px;
+    align-items: flex-end;
+    padding: 18px;
+    border: 1px solid #ffffff90;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 8px 24px #17271e40;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 1px 8px #000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px #17271e66;
+}
+
+.tourist-button {
+    background-image: linear-gradient(transparent, #17271ed9), url("images/isha.jpg");
+}
+
+.historical-button {
+    background-image: linear-gradient(transparent, #17271ed9), url("images/k1.jpg");
+}
+
+.waterfalls-button {
+    background-image: linear-gradient(transparent, #17271ed9), url("images/waterfall.jpg");
+}
+
+.foods-button {
+    background-image: linear-gradient(transparent, #17271ed9), url("images/foods/bisibalebath.jpg");
+}
+
+.travel-button {
+    background-image: linear-gradient(transparent, #17271ed9), url("images/map.jpg");
+}
+
+.travel-cards {
+    max-width: 940px;
+}
+
+.destination-cards {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+}
+
+.destination-image,
+.food-card img,
+.historic-card img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.destination-image {
+    height: 210px;
+    margin-bottom: 18px;
+}
+
+.destination-card ol {
+    padding-left: 22px;
+}
+
+.destination-card li {
+    margin-top: 16px;
+    font-weight: 650;
+}
+
+.destination-card li p {
+    margin: 4px 0 0;
+    font-weight: 400;
+}
+
+.food-list,
+.historic-list {
+    display: grid;
+    gap: 16px;
+    max-width: 900px;
+    margin: 28px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.food-card,
+.historic-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 18px;
+}
+
+.food-card img,
+.historic-card img {
+    width: 220px;
+    height: 160px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 14px;
+        background-attachment: scroll;
+    }
+
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .site-nav {
+        justify-content: flex-start;
+        margin: 0 -8px;
+    }
+
+    .site-nav a {
+        padding: 8px;
+        font-size: 0.86rem;
+    }
+
+    .food-card,
+    .historic-card {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .food-card img,
+    .historic-card img {
+        width: 100%;
+        height: auto;
+        max-height: 260px;
+    }
+}
